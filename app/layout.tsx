@@ -12,12 +12,13 @@ import { ThemeToggleProvider } from "./themeContext";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ErrorBoundary } from "./components/error-boundary";
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://ruqyah.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://ruqyah-bd.vercel.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Ruqyah - রুকইয়াহ",
+    default: "রুকইয়াহ | Ruqyah",
     template: "%s | Ruqyah",
   },
   description:
@@ -46,8 +47,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "bn_BD",
     url: baseUrl,
-    siteName: "Learn Ruqyah",
-    title: "Learn Ruqyah - রুকইয়াহ শিখুন",
+    siteName: "রুকইয়াহ | Ruqyah",
+    title: "রুকইয়াহ: Spiritual healing",
     description:
       "Learn Ruqyah (রুকইয়াহ) - Learn Islamic spiritual healing based on Quran and Sunnah. Complete video resources, documentation, and contact information for Raqis.",
     images: [
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Learn Ruqyah - রুকইয়াহ শিখুন",
+    title: "রুকইয়াহ | Ruqyah",
     description:
       "Learn Ruqyah (রুকইয়াহ) - Learn Islamic spiritual healing based on Quran and Sunnah.",
     images: ["/Ruqyah-Web-Banner.png"],
