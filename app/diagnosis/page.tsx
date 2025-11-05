@@ -52,6 +52,7 @@ const Diagnosis = () => {
           <Link
             href="https://play.google.com/store/apps/details?id=org.ruqyahbd.check"
             target="_blank"
+            rel="noopener noreferrer"
             passHref
           >
             <Image
@@ -63,6 +64,7 @@ const Diagnosis = () => {
           <Link
             href="https://apps.apple.com/us/app/self-diagnosis/id6474099233"
             target="_blank"
+            rel="noopener noreferrer"
             passHref
           >
             <Image
@@ -74,6 +76,7 @@ const Diagnosis = () => {
           <Link
             href="https://test.ruqyahbd.org/"
             target="_blank"
+            rel="noopener noreferrer"
             passHref
           >
             <Image src={pwaImage} width={100} alt="PWA Ruqyah Diagnosis App" />
@@ -105,6 +108,7 @@ const Diagnosis = () => {
           <iframe
             src="https://test.ruqyahbd.org/"
             title="Ruqyah Self Diagnosis Website"
+            loading="lazy"
             style={{
               width: "100%",
               height: "100%",
@@ -113,6 +117,7 @@ const Diagnosis = () => {
             }}
             onLoad={handleIframeLoad}
             allowFullScreen
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
           />
         </Box>
       </Container>

@@ -1,0 +1,40 @@
+{
+	"মৌলিক Videos": [
+		{ "url": "https://www.youtube.com/embed/WfTaVPVCrsM?si=63qBBIFku3dF2lgo" },
+		{ "url": "https://www.youtube.com/embed/ArrzJDUEVPo?si=mq94syBXDksB83gh" },
+		{ "url": "https://www.youtube.com/embed/WJP4izBxp5k?si=QiwJqAOahLoI5Bh0" },
+		{ "url": "https://www.youtube.com/embed/vXKL0XwHxho?si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/0ZWPJ4RC44M?si=x1ANFOlDP-wC0AfX" },
+		{ "url": "https://www.youtube.com/embed/awCnJjEUowg?si=XqwO3YBltgSab2zK" },
+		{ "url": "https://www.youtube.com/embed/hO-qSJ6Z_kE?si=X-4tNXxeHA2b5N90" },
+		{ "url": "https://www.youtube.com/embed/iWlOrpiAxI0?si=RHFDrvKnrp4tC7H7" }
+	],
+	"জীন সম্পর্কিত Videos": [
+		{ "url": "https://www.youtube.com/embed/8KZjFmtCHU8?si=pn4RWSo1_8YsZq9Q" },
+		{ "url": "https://www.youtube.com/embed/OLPlxBJDniw?si=QzDpMjUW7CxA2V6c" },
+		{ "url": "https://www.youtube.com/embed/WoF3psrjD5M?si=AS88P6V3tDqrBDrS" },
+		{ "url": "https://www.youtube.com/embed/PE_4oeqsL5U?si=DRAFlmjkyBwv3ggM" },
+		{ "url": "https://www.youtube.com/embed/rYufzX5aWvw?si=1OSkxlQ5LmZoCFSF" }
+	],
+	"যাদু সম্পর্কিত Videos": [
+		{ "url": "https://www.youtube.com/embed/Udgbxy8tyvc?si=jOkPJXfJzcOHwTl4" },
+		{ "url": "https://www.youtube.com/embed/iU5Jez193Hs?si=Le6Y-2B7Cyyvt_uW" },
+		{ "url": "https://www.youtube.com/embed/K76OkeA-V8Q?si=tbd9NnMnG9REQu3C" },
+		{ "url": "https://www.youtube.com/embed/jBZPV235VB8?si=kO7qdI2FGHHdK7VC" },
+		{ "url": "https://www.youtube.com/embed/BXaOBXb5A9s?si=482GXs6ndlZq7Aot" },
+		{ "url": "https://www.youtube.com/embed/WgkQIRPZPrA?si=hMFlkdWcQe29JPuf" }
+	],
+	"বদ নজর সম্পর্কিত Videos": [
+		{ "url": "https://www.youtube.com/embed/VZN-NI5rye8?si=Hh0-FrpK4pDoXLrM" },
+		{ "url": "https://www.youtube.com/embed/WVamEfsAY-g?si=U-WZHk5EfPbOa-Vt" },
+		{ "url": "https://www.youtube.com/embed/nzzGWbhlD0U?si=Ngdd2QYvD2W43PLq" },
+		{ "url": "https://www.youtube.com/embed/YfrJ6GUJZ-Q?si=UMsSYcoknMWKepDR" }
+	],
+	"চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু Videos": [
+		{ "url": "https://www.youtube.com/embed/c0B-oeKXcU4?si=bwDyapcQ0T1Uuxh9" },
+		{ "url": "https://www.youtube.com/embed/qrljz15-v0A?si=_nswOnL7VuGhjVij" },
+		{ "url": "https://www.youtube.com/embed/8tLDMIwiS9E?si=aCXcwU7r_EpWBf0T" },
+		{ "url": "https://www.youtube.com/embed/uoEApQq86H4?si=IPKluyb74RhKAHsV" },
+		{ "url": "https://www.youtube.com/embed/0SeN0FglZV0?si=yDdkqJGhf2sOdISV" }
+	]
+}

@@ -21,8 +21,11 @@ export const ThemeToggleProvider: React.FC<{ children: React.ReactNode }> = ({ c
   const [theme, setTheme] = useState<Theme>(lightTheme);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme.palette.mode === 'light' ? darkTheme : lightTheme));
-    localStorage.setItem('preferredTheme', theme.palette.mode === 'light' ? 'dark' : 'light');
+    setTheme((prevTheme) => {
+      const newTheme = prevTheme.palette.mode === 'light' ? darkTheme : lightTheme;
+      localStorage.setItem('preferredTheme', newTheme.palette.mode);
+      return newTheme;
+    });
   };
 
   useEffect(() => {

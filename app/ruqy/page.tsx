@@ -12,26 +12,12 @@ import {
   useTheme,
 } from "@mui/material";
 import data from "../data/raqyContacts.json";
-
-interface Center {
-  name?: string;
-  names?: string[];
-  organization?: string;
-  address?: string;
-  additional_address?: string;
-  contact?: string;
-  consultation_time?: string;
-  page_link?: string;
-  notes?: string;
-}
-
-interface Locations {
-  [key: string]: Center[];
-}
+import type { RaqyContactsData, Locations } from "../types/data";
 
 const Ruqy = () => {
   const theme = useTheme();
-  const locations: Locations = data.locations;
+  const typedData = data as RaqyContactsData;
+  const locations: Locations = typedData.locations;
 
   return (
     <Box sx={{ py: 5 }}>
@@ -177,7 +163,7 @@ const Ruqy = () => {
                         <Link
                           href={center.page_link}
                           target="_blank"
-                          rel="noopener"
+                          rel="noopener noreferrer"
                           sx={{
                             color: theme.palette.primary.main,
                             textDecoration: "underline",

@@ -7,7 +7,7 @@ import { createTheme, ThemeOptions } from "@mui/material/styles";
 const commonTypography: ThemeOptions["typography"] = {
   fontFamily: "Noto Serif Bengali, sans-serif", // General fallback font
   h1: {
-    fontFamily: "Hind Siliguri, sans-serif", // Main heading font
+    fontFamily: "Noto Serif Bengali, sans-serif", // Main heading font
     fontWeight: 700,
     lineHeight: 1.5,
     fontSize: "2.5rem", // Desktop
@@ -15,7 +15,7 @@ const commonTypography: ThemeOptions["typography"] = {
     "@media (max-width:900px)": { fontSize: "2rem" }, // Mobile
   },
   h2: {
-    fontFamily: "Hind Siliguri, sans-serif", // Subheading font
+    fontFamily: "Noto Serif Bengali, sans-serif", // Subheading font
     fontWeight: 700,
     fontSize: "2rem", // Desktop
     "@media (max-width:1200px)": { fontSize: "1.75rem" }, // Tablet
@@ -23,21 +23,21 @@ const commonTypography: ThemeOptions["typography"] = {
     color: "#66BB6A",
   },
   h3: {
-    fontFamily: "Hind Siliguri, sans-serif", // Lexend font for smaller headings
+    fontFamily: "Noto Serif Bengali, sans-serif", // Lexend font for smaller headings
     fontWeight: 600,
     fontSize: "1.75rem", // Desktop
     "@media (max-width:1200px)": { fontSize: "1.5rem" }, // Tablet
     "@media (max-width:900px)": { fontSize: "1.3rem" }, // Mobile
   },
   h4: {
-    fontFamily: "Lexend, sans-serif", // Font for Bengali text
+    fontFamily: "Noto Serif Bengali, sans-serif", // Font for Bengali text
     fontWeight: 600,
     fontSize: "1.25rem", // Desktop
     "@media (max-width:1200px)": { fontSize: "1.25rem" }, // Tablet
     "@media (max-width:900px)": { fontSize: "1.25rem" }, // Mobile
   },
   h5: {
-    fontFamily: "Hind Siliguri, sans-serif",
+    fontFamily: "Noto Serif Bengali, sans-serif",
     fontWeight: 500,
     fontSize: "1.1rem", // Desktop
     "@media (max-width:1200px)": { fontSize: "1rem" }, // Tablet
@@ -60,65 +60,175 @@ const commonTypography: ThemeOptions["typography"] = {
     lineHeight: 2,
   },
   button: {
-    fontFamily: "Lexend, sans-serif", // Font for button text
+    fontFamily: "Noto Serif Bengali, sans-serif", // Font for button text
     fontWeight: 500,
     fontSize: "0.9rem",
     textTransform: "uppercase",
   },
 };
 
-// Light theme
+// Islamic-inspired color palette
+const islamicColors = {
+  // Deep greens (Quran-inspired)
+  greenDark: "#0F5132",
+  greenPrimary: "#2D5016",
+  greenLight: "#4A7C59",
+  greenAccent: "#66BB6A",
+  
+  // Gold accents (premium, sacred)
+  gold: "#D4AF37",
+  goldLight: "#F4D03F",
+  goldDark: "#B8940F",
+  
+  // Earth tones (warm, grounding)
+  cream: "#F5F5DC",
+  beige: "#E8DCC6",
+  brown: "#8B7355",
+  
+  // Neutral grays
+  grayDark: "#2C3E50",
+  grayMedium: "#5D6D7E",
+  grayLight: "#ECF0F1",
+};
+
+// Light theme with Islamic aesthetic
 const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#66BB6A",
+      main: islamicColors.greenPrimary,
+      light: islamicColors.greenLight,
+      dark: islamicColors.greenDark,
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#1B5E20",
-      contrastText: "#ffffff",
+      main: islamicColors.gold,
+      light: islamicColors.goldLight,
+      dark: islamicColors.goldDark,
+      contrastText: islamicColors.greenDark,
     },
     background: {
-      default: "#ffffff",
-      paper: "#f4f4f4",
+      default: "#FAFAFA",
+      paper: "#FFFFFF",
     },
     text: {
-      primary: "#444",
-      secondary: "#555555",
+      primary: islamicColors.greenDark,
+      secondary: islamicColors.grayMedium,
     },
     warning: {
-      main: "#e69138",
+      main: islamicColors.gold,
+      contrastText: "#ffffff",
+    },
+    success: {
+      main: islamicColors.greenAccent,
     },
   },
   typography: commonTypography,
+  shape: {
+    borderRadius: 12,
+  },
+  components: {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+          transition: "all 0.3s ease-in-out",
+          border: "1px solid rgba(45, 80, 22, 0.1)",
+          "&:hover": {
+            boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+            transform: "translateY(-2px)",
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+          textTransform: "none",
+          fontWeight: 600,
+          padding: "10px 24px",
+          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+          transition: "all 0.3s ease",
+          "&:hover": {
+            transform: "translateY(-1px)",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.15)",
+          },
+        },
+      },
+    },
+  },
 });
 
-// Dark theme
+// Dark theme with Islamic aesthetic
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#66BB6A",
+      main: islamicColors.greenAccent,
+      light: "#81C784",
+      dark: "#4CAF50",
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#9e9e9e",
-      contrastText: "#ffffff",
+      main: islamicColors.gold,
+      light: islamicColors.goldLight,
+      dark: islamicColors.goldDark,
+      contrastText: islamicColors.greenDark,
     },
     background: {
-      default: "#333",
-      paper: "#1e1e1e",
+      default: "#0F1419",
+      paper: "#1A1F2E",
     },
     text: {
-      primary: "#ffffff",
-      secondary: "#bbbbbb",
+      primary: "#E8E8E8",
+      secondary: "#B0B0B0",
     },
     warning: {
-      main: "#ffa726",
+      main: islamicColors.gold,
+      contrastText: "#000000",
+    },
+    success: {
+      main: islamicColors.greenAccent,
     },
   },
   typography: commonTypography,
+  shape: {
+    borderRadius: 12,
+  },
+  components: {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2)",
+          transition: "all 0.3s ease-in-out",
+          border: "1px solid rgba(102, 187, 106, 0.2)",
+          backgroundImage: "linear-gradient(135deg, #1A1F2E 0%, #1E2538 100%)",
+          "&:hover": {
+            boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3)",
+            transform: "translateY(-2px)",
+            borderColor: "rgba(102, 187, 106, 0.4)",
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+          textTransform: "none",
+          fontWeight: 600,
+          padding: "10px 24px",
+          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
+          transition: "all 0.3s ease",
+          "&:hover": {
+            transform: "translateY(-1px)",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)",
+          },
+        },
+      },
+    },
+  },
 });
 
 export { lightTheme, darkTheme };
