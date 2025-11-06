@@ -261,7 +261,7 @@ export default function Home() {
             <Grid item xs={12} sm={6}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/WfTaVPVCrsM?controls=0&modestbranding=1&rel=0&si=ZYrUQO4-N-lNJewK"
+                  "https://www.youtube.com/embed/WfTaVPVCrsM?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>
@@ -344,28 +344,28 @@ export default function Home() {
             <Grid item xs={12} sm={6} md={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/WoF3psrjD5M?si=AS88P6V3tDqrBDrS"
+                  "https://www.youtube.com/embed/WoF3psrjD5M?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/ArrzJDUEVPo?si=fHIM30wU-upOszYT"
+                  "https://www.youtube.com/embed/ArrzJDUEVPo?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/WJP4izBxp5k?si=QiwJqAOahLoI5Bh0"
+                  "https://www.youtube.com/embed/WJP4izBxp5k?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/vXKL0XwHxho?si=ZYrUQO4-N-lNJewK"
+                  "https://www.youtube.com/embed/vXKL0XwHxho?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
               {/* https://www.youtube.com/embed/vXKL0XwHxho?controls=0&modestbranding=1&rel=0&si=ZYrUQO4-N-lNJewK */}
@@ -373,14 +373,14 @@ export default function Home() {
             <Grid item xs={12} sm={6} md={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/0ZWPJ4RC44M?si=x1ANFOlDP-wC0AfX"
+                  "https://www.youtube.com/embed/0ZWPJ4RC44M?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/awCnJjEUowg?si=YGummhrLCVJxqYZo"
+                  "https://www.youtube.com/embed/awCnJjEUowg?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>
@@ -658,7 +658,7 @@ export default function Home() {
             <Grid item xs={12} sm={4}>
               <Video
                 url={
-                  "https://www.youtube.com/embed/GFvtirknkAc?si=BJLzH999zUfOYbyq"
+                  "https://www.youtube.com/embed/GFvtirknkAc?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK"
                 }
               />
             </Grid>

@@ -24,7 +24,7 @@ export default function Video({ url }: VideoProps) {
         loading="lazy"
         frameBorder="0"
         // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allow="web-share"
+        allow=""
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
         title="YouTube video player"

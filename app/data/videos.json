@@ -1,13 +1,14 @@
 {
 	"মৌলিক Videos": [
-		{ "url": "https://www.youtube.com/embed/WfTaVPVCrsM?si=63qBBIFku3dF2lgo" },
-		{ "url": "https://www.youtube.com/embed/ArrzJDUEVPo?si=mq94syBXDksB83gh" },
-		{ "url": "https://www.youtube.com/embed/WJP4izBxp5k?si=QiwJqAOahLoI5Bh0" },
-		{ "url": "https://www.youtube.com/embed/vXKL0XwHxho?si=ZYrUQO4-N-lNJewK" },
-		{ "url": "https://www.youtube.com/embed/0ZWPJ4RC44M?si=x1ANFOlDP-wC0AfX" },
-		{ "url": "https://www.youtube.com/embed/awCnJjEUowg?si=XqwO3YBltgSab2zK" },
-		{ "url": "https://www.youtube.com/embed/hO-qSJ6Z_kE?si=X-4tNXxeHA2b5N90" },
-		{ "url": "https://www.youtube.com/embed/iWlOrpiAxI0?si=RHFDrvKnrp4tC7H7" }
+		{ "url": "https://www.youtube.com/embed/WfTaVPVCrsM?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/ArrzJDUEVPo?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/WJP4izBxp5k?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/vXKL0XwHxho?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/0ZWPJ4RC44M?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/awCnJjEUowg?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/hO-qSJ6Z_kE?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/4cnj9365sww?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" },
+		{ "url": "https://www.youtube.com/embed/iWlOrpiAxI0?controls=0&modestbranding=0&rel=0&si=ZYrUQO4-N-lNJewK" }
 	],
 	"জীন সম্পর্কিত Videos": [
 		{ "url": "https://www.youtube.com/embed/8KZjFmtCHU8?si=pn4RWSo1_8YsZq9Q" },
