@@ -259,6 +259,13 @@ export default function Home() {
 
           <Grid container spacing={{ xs: 2, sm: 3 }}>
             <Grid item xs={12} sm={6}>
+              <Video
+                url={
+                  "https://www.youtube.com/embed/WfTaVPVCrsM?controls=0&modestbranding=1&rel=0&si=ZYrUQO4-N-lNJewK"
+                }
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
               <Box
                 sx={{
                   background: theme.palette.background.paper,
@@ -308,13 +315,6 @@ export default function Home() {
                   রুকইয়াহ কার্যকরী চিকিৎসা পদ্ধতি।
                 </Typography>
               </Box>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Video
-                url={
-                  "https://www.youtube.com/embed/WfTaVPVCrsM?si=63qBBIFku3dF2lgo"
-                }
-              />
             </Grid>
           </Grid>
         </Container>
@@ -368,6 +368,7 @@ export default function Home() {
                   "https://www.youtube.com/embed/vXKL0XwHxho?si=ZYrUQO4-N-lNJewK"
                 }
               />
+              {/* https://www.youtube.com/embed/vXKL0XwHxho?controls=0&modestbranding=1&rel=0&si=ZYrUQO4-N-lNJewK */}
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video

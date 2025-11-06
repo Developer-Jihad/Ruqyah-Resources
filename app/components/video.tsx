@@ -23,7 +23,8 @@ export default function Video({ url }: VideoProps) {
         src={url}
         loading="lazy"
         frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
         title="YouTube video player"
