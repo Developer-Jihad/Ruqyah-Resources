@@ -105,7 +105,7 @@ export default function Home() {
                 display: "inline-flex",
                 alignItems: "center",
 
-                width: { xs: "90%", sm: "100%" },
+                width: { xs: "95%", sm: "100%" },
                 gap: 1.5,
                 px: { xs: 4, sm: 3 },
                 py: 1,
@@ -123,7 +123,7 @@ export default function Home() {
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "0.7rem", sm: "0.8rem", md: "0.9rem" },
+                  fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" },
                   fontWeight: 600,
                   color: isDarkMode ? theme.palette.primary.main : "#2D5016",
                   letterSpacing: "0.5px",

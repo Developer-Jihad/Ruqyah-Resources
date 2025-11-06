@@ -142,7 +142,13 @@ export default function UnifiedAppBar() {
         }}
       >
         <Container disableGutters>
-          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Toolbar
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              px: 3,
+            }}
+          >
             <Box>
               <Link
                 style={{
@@ -156,8 +162,9 @@ export default function UnifiedAppBar() {
                 <Image src={logo} alt="Ruqyah logo" width={25} height={27} />
                 <Typography
                   sx={{
+                    // display: { xs: "none", md: "block" },
                     color: theme.palette.primary.main,
-                    fontSize: "1.3rem",
+                    fontSize: { xs: "1.3rem" },
                     fontWeight: "bold",
                   }}
                 >
@@ -234,7 +241,7 @@ export default function UnifiedAppBar() {
                   <DarkModeIcon sx={{ color: "#333" }} />
                 )}
               </IconButton>
-              <IconButton
+              {/* <IconButton
                 color="inherit"
                 aria-label="open navigation menu"
                 edge="end"
@@ -246,13 +253,13 @@ export default function UnifiedAppBar() {
                 ) : (
                   <MenuIcon sx={{ color: "#333" }} />
                 )}
-              </IconButton>
+              </IconButton> */}
             </Box>
           </Toolbar>
         </Container>
       </AppBar>
 
-      <nav>
+      {/* <nav>
         <Drawer
           container={container}
           variant="temporary"
@@ -278,7 +285,7 @@ export default function UnifiedAppBar() {
         >
           {drawer}
         </Drawer>
-      </nav>
+      </nav> */}
 
       {isMobile && (
         <BottomNavigation
