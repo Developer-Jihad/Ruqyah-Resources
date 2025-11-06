@@ -38,7 +38,7 @@ interface NavItem {
   icon: JSX.Element;
 }
 
-const drawerWidth = 200;
+const drawerWidth = 250;
 const navItems: NavItem[] = [
   { label: "হোম", path: "/", icon: <HomeIcon /> },
   { label: "ডকুমেন্টস", path: "/docs", icon: <DescriptionIcon /> },
@@ -71,7 +71,7 @@ export default function UnifiedAppBar() {
         variant="h4"
         sx={{ my: 2, color: isDarkMode ? "#fff" : "#333" }}
       >
-        Learn Ruqyah
+        রুকইয়াহ
       </Typography>
       <Divider />
       <List>
@@ -85,7 +85,7 @@ export default function UnifiedAppBar() {
               sx={{
                 bgcolor: isDarkMode ? "#333" : "#fff",
                 textAlign: "center",
-                borderRadius: "5px",
+                borderRadius: 1,
                 border:
                   activeTab !== item.path
                     ? theme.palette.primary.main
@@ -105,9 +105,9 @@ export default function UnifiedAppBar() {
             >
               <ListItemText
                 sx={{
-                  fontFamily: "Lexend, sans-serif",
+                  fontFamily: "Noto Serif Bengali, sans-serif",
                   "& .MuiTypography-root": {
-                    fontFamily: "Lexend, sans-serif",
+                    fontFamily: "Noto Serif Bengali, sans-serif",
                     fontWeight: "bold",
                   },
                 }}
@@ -127,6 +127,7 @@ export default function UnifiedAppBar() {
         component="nav"
         elevation={0}
         sx={{
+          py: "4px",
           backdropFilter: "blur(20px) saturate(180%)",
           borderBottom: `2px solid ${
             isDarkMode ? "rgba(102, 187, 106, 0.2)" : "rgba(45, 80, 22, 0.15)"
@@ -141,47 +142,29 @@ export default function UnifiedAppBar() {
         }}
       >
         <Container disableGutters>
-          <Toolbar>
-            <Link href="/">
-              <Box
-                sx={{
+          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Box>
+              <Link
+                style={{
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "100%",
-                  height: "100%",
+                  gap: "12px",
                 }}
-              >
-                <Image src={logo} alt="Ruqyah logo" width={20} height={21} />
-              </Box>
-            </Link>
-
-            <Typography
-              variant="h4"
-              component="div"
-              sx={{
-                flexGrow: 1,
-                ml: 1.5,
-                fontWeight: 700,
-                background: isDarkMode
-                  ? "linear-gradient(135deg, #66BB6A 0%, #81C784 100%)"
-                  : "linear-gradient(135deg, #2D5016 0%, #4A7C59 100%)",
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                transition: "all 0.3s ease",
-                "&:hover": {
-                  transform: "scale(1.02)",
-                },
-              }}
-            >
-              <Link
                 href="/"
-                style={{ textDecoration: "none", color: "inherit" }}
               >
-                রুকইয়াহ
+                <Image src={logo} alt="Ruqyah logo" width={25} height={27} />
+                <Typography
+                  sx={{
+                    color: theme.palette.primary.main,
+                    fontSize: "1.3rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  রুকইয়াহ
+                </Typography>
               </Link>
-            </Typography>
+            </Box>
 
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
@@ -194,6 +177,7 @@ export default function UnifiedAppBar() {
                   sx={{
                     borderRadius: 1,
                     position: "relative",
+                    boxShadow: "none",
                     color:
                       activeTab === item.path
                         ? theme.palette.primary.main
@@ -201,7 +185,7 @@ export default function UnifiedAppBar() {
                         ? "#E8E8E8"
                         : "#2D5016",
                     fontWeight: activeTab === item.path ? 700 : 500,
-                    px: 3,
+                    px: 2,
                     py: 1,
                     mx: 0.5,
                     transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -222,7 +206,7 @@ export default function UnifiedAppBar() {
                           }
                         : {},
                     "&:hover": {
-                      borderRadius: 2,
+                      borderRadius: 1,
                       backgroundColor: isDarkMode
                         ? "rgba(102, 187, 106, 0.15)"
                         : "rgba(45, 80, 22, 0.08)",
@@ -235,29 +219,35 @@ export default function UnifiedAppBar() {
               ))}
             </Box>
 
-            <IconButton
-              edge="end"
-              color="inherit"
-              onClick={toggleTheme}
-              aria-label={
-                isDarkMode ? "Switch to light mode" : "Switch to dark mode"
-              }
-            >
-              {isDarkMode ? (
-                <LightModeIcon />
-              ) : (
-                <DarkModeIcon sx={{ color: "#333" }} />
-              )}
-            </IconButton>
-            <IconButton
-              color="inherit"
-              aria-label="open navigation menu"
-              edge="end"
-              onClick={handleDrawerToggle}
-              sx={{ display: { md: "none" }, ml: 1 }}
-            >
-              {isDarkMode ? <MenuIcon /> : <MenuIcon sx={{ color: "#333" }} />}
-            </IconButton>
+            <Box sx={{ width: "100px", textAlign: "right" }}>
+              <IconButton
+                edge="end"
+                color="inherit"
+                onClick={toggleTheme}
+                aria-label={
+                  isDarkMode ? "Switch to light mode" : "Switch to dark mode"
+                }
+              >
+                {isDarkMode ? (
+                  <LightModeIcon />
+                ) : (
+                  <DarkModeIcon sx={{ color: "#333" }} />
+                )}
+              </IconButton>
+              <IconButton
+                color="inherit"
+                aria-label="open navigation menu"
+                edge="end"
+                onClick={handleDrawerToggle}
+                sx={{ display: { md: "none" }, ml: 1 }}
+              >
+                {isDarkMode ? (
+                  <MenuIcon />
+                ) : (
+                  <MenuIcon sx={{ color: "#333" }} />
+                )}
+              </IconButton>
+            </Box>
           </Toolbar>
         </Container>
       </AppBar>
@@ -280,7 +270,7 @@ export default function UnifiedAppBar() {
               backdropFilter: "blur(10px)",
               backgroundColor: isDarkMode
                 ? "rgba(05, 10, 20, 0.8)"
-                : "rgba(255, 255, 255, 0.8)",
+                : "rgba(255, 255, 255, 0.7)",
               color: isDarkMode ? "#fff" : "#333",
               height: "100vh",
             },
@@ -318,19 +308,11 @@ export default function UnifiedAppBar() {
               onClick={handleNavClick}
               aria-current={activeTab === item.path ? "page" : undefined}
               sx={{
+                borderRadius: 2,
                 color:
                   activeTab === item.path
                     ? theme.palette.primary.main
                     : theme.palette.text.secondary,
-                "& .MuiBottomNavigationAction-label": {
-                  fontFamily: "'Noto Serif Bengali', sans-serif",
-                  fontSize: theme.typography.button.fontSize,
-                  fontWeight: theme.typography.button.fontWeight,
-                  color:
-                    activeTab === item.path
-                      ? theme.palette.primary.main
-                      : theme.palette.text.secondary,
-                },
               }}
             />
           ))}

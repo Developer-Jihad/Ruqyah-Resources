@@ -13,24 +13,19 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        py: { xs: 6, md: 10 },
+        py: { xs: 8, sm: 10 },
+        background: isDarkMode ? "#1A1F2E" : "rgb(238, 238, 238)",
+
         backdropFilter: "blur(20px) saturate(180%)",
         borderTop: `2px solid ${
           isDarkMode ? "rgba(102, 187, 106, 0.2)" : "rgba(45, 80, 22, 0.15)"
         }`,
-        backgroundColor: isDarkMode
-          ? "rgba(15, 20, 25, 0.95)"
-          : "rgba(255, 255, 255, 0.95)",
-        backgroundImage: isDarkMode
-          ? "linear-gradient(135deg, rgba(15, 20, 25, 0.95) 0%, rgba(26, 31, 46, 0.95) 100%)"
-          : "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 250, 250, 0.95) 100%)",
-        transition: "all 0.3s ease",
       }}
     >
       <Container>
         <Grid container spacing={4}>
           {/* Column 1 */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={4}>
             <Typography
               variant="h5"
               gutterBottom
@@ -56,56 +51,7 @@ const Footer = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography
-              variant="h5"
-              gutterBottom
-              sx={{
-                color: theme.palette.primary.main,
-                fontWeight: 700,
-                mb: 2,
-                fontSize: "1.1rem",
-              }}
-            >
-              Contact Info
-            </Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
-              <Typography
-                variant="body2"
-                sx={{
-                  color: theme.palette.text.secondary,
-                  "&:hover": {
-                    color: theme.palette.primary.main,
-                    transition: "color 0.3s",
-                  },
-                }}
-              >
-                ● +88 01303 417 316
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  color: theme.palette.text.secondary,
-                  "&:hover": {
-                    color: theme.palette.primary.main,
-                    transition: "color 0.3s",
-                  },
-                }}
-              >
-                ● jihad.developer.bd@gmail.com
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  color: theme.palette.text.secondary,
-                }}
-              >
-                ● Bangladesh
-              </Typography>
-            </Box>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={2}>
             <Typography
               variant="h5"
               gutterBottom
@@ -150,7 +96,7 @@ const Footer = () => {
           </Grid>
 
           {/* Column 2 */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={3}>
             <Typography
               variant="h5"
               gutterBottom
@@ -199,6 +145,56 @@ const Footer = () => {
                   </Typography>
                 </Link>
               ))}
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} sm={3}>
+            <Typography
+              variant="h5"
+              gutterBottom
+              sx={{
+                color: theme.palette.primary.main,
+                fontWeight: 700,
+                mb: 2,
+                fontSize: "1.1rem",
+              }}
+            >
+              Contact Info
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: theme.palette.text.secondary,
+                  "&:hover": {
+                    color: theme.palette.primary.main,
+                    transition: "color 0.3s",
+                  },
+                }}
+              >
+                ● +88 01303 417 316
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: theme.palette.text.secondary,
+                  "&:hover": {
+                    color: theme.palette.primary.main,
+                    transition: "color 0.3s",
+                    textWrap: "wrap",
+                  },
+                }}
+              >
+                ● jihad.developer.bd @gmail.com
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: theme.palette.text.secondary,
+                }}
+              >
+                ● Bangladesh
+              </Typography>
             </Box>
           </Grid>
         </Grid>

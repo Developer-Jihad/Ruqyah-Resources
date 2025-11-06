@@ -30,7 +30,7 @@ export default function Bookmark({
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: "100%",
         height: "100%",
         borderRadius: 2,
         overflow: "hidden",
