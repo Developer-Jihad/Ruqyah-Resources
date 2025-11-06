@@ -87,15 +87,27 @@ export default function Home() {
             justifyItems: "center",
           }}
         >
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { xs: "1.7rem", sm: "2.5rem", md: "3rem" },
+              mb: 3,
+              color: theme.palette.primary.main,
+              textAlign: "center",
+            }}
+          >
+            রুকইয়াহ (Ruqyah)
+          </Typography>
+
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Box
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
 
-                width: { xs: "85%", sm: "100%" },
+                width: { xs: "90%", sm: "100%" },
                 gap: 1.5,
-                px: { xs: 5, sm: 3 },
+                px: { xs: 4, sm: 3 },
                 py: 1,
                 mb: 4,
                 borderRadius: "100px",
@@ -111,7 +123,7 @@ export default function Home() {
             >
               <Typography
                 sx={{
-                  fontSize: "0.875rem",
+                  fontSize: { xs: "0.7rem", sm: "0.8rem", md: "0.9rem" },
                   fontWeight: 600,
                   color: isDarkMode ? theme.palette.primary.main : "#2D5016",
                   letterSpacing: "0.5px",
@@ -120,21 +132,10 @@ export default function Home() {
                 }}
               >
                 আমি নাযিল করছি এমন কুরআন, যা মুমিনদের জন্যে শেফা ও রহমত।
+                [সূরা-১৭:৮২]
               </Typography>
             </Box>
           </Box>
-
-          <Typography
-            variant="h1"
-            sx={{
-              fontSize: { xs: "1.9rem", sm: "3rem" },
-              mb: 3,
-              color: theme.palette.primary.main,
-              textAlign: "center",
-            }}
-          >
-            রুকইয়াহ: Spiritual healing
-          </Typography>
 
           <Typography
             variant="h5"
@@ -253,7 +254,7 @@ export default function Home() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            রুকইয়াহ কি? (What is Ruqyah?)
+            রুকইয়াহ কি, কেন?
           </Typography>
 
           <Grid container spacing={{ xs: 2, sm: 3 }}>
@@ -336,7 +337,7 @@ export default function Home() {
               mb: { xs: 3, sm: 5 },
             }}
           >
-            মৌলিক ভিডিও (Basic Videos)
+            বিষয় ভিত্তিক ভিডিও
           </Typography>
 
           <Grid container spacing={{ xs: 2, sm: 3 }}>
@@ -649,7 +650,7 @@ export default function Home() {
               mb: { xs: 3, sm: 5 },
             }}
           >
-            রাক্বির সাহায্য নিন (Get Support)
+            রাক্বিদের সাহায্য নিন
           </Typography>
 
           <Grid container spacing={{ xs: 2, sm: 3 }}>
