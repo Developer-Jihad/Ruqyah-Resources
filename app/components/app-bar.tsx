@@ -128,16 +128,13 @@ export default function UnifiedAppBar() {
         elevation={0}
         sx={{
           py: "4px",
-          backdropFilter: "blur(20px) saturate(180%)",
           borderBottom: `2px solid ${
             isDarkMode ? "rgba(102, 187, 106, 0.2)" : "rgba(45, 80, 22, 0.15)"
           }`,
           backgroundColor: isDarkMode
-            ? "rgba(15, 20, 25, 0.95)"
-            : "rgba(255, 255, 255, 0.95)",
-          backgroundImage: isDarkMode
-            ? "linear-gradient(135deg, rgba(15, 20, 25, 0.95) 0%, rgba(26, 31, 46, 0.95) 100%)"
-            : "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 250, 250, 0.95) 100%)",
+            ? "rgba(10, 20, 30, 0.7)"
+            : "rgba(255, 255, 255, 0.7)",
+          backdropFilter: "blur(10px)",
           transition: "all 0.3s ease",
         }}
       >
@@ -162,7 +159,6 @@ export default function UnifiedAppBar() {
                 <Image src={logo} alt="Ruqyah logo" width={25} height={27} />
                 <Typography
                   sx={{
-                    // display: { xs: "none", md: "block" },
                     color: theme.palette.primary.main,
                     fontSize: { xs: "1.3rem" },
                     fontWeight: "bold",
@@ -298,8 +294,8 @@ export default function UnifiedAppBar() {
             right: 0,
             borderTop: `1px solid ${theme.palette.divider}`,
             backgroundColor: isDarkMode
-              ? "rgba(10, 20, 30, 0.8)"
-              : "rgba(255, 255, 255, 0.8)",
+              ? "rgba(10, 20, 30, 0.7)"
+              : "rgba(255, 255, 255, 0.7)",
             backdropFilter: "blur(10px)",
             zIndex: 1000,
           }}
