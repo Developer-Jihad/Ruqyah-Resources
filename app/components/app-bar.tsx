@@ -222,7 +222,7 @@ export default function UnifiedAppBar() {
               ))}
             </Box>
 
-            <Box sx={{ width: "100px", textAlign: "right" }}>
+            <Box sx={{ width: "93px", textAlign: "right" }}>
               <IconButton
                 edge="end"
                 color="inherit"
